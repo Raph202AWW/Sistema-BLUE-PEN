@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="611.0" prefWidth="782.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="packController.controllerMain">
+   <children>
+      <Button fx:id="btVoltar" layoutX="710.0" layoutY="545.0" mnemonicParsing="false" onAction="#btVoltarTest" prefHeight="51.0" prefWidth="64.0" style="-fx-background-color: linear-gradient(to bottom, #0099cc 0%, #0066cc 100%); -fx-background-radius: 50;">
+         <graphic>
+            <ImageView fitHeight="51.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../packageIcons/seta.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Text layoutX="105.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produtos">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="358.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vendedor">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="587.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Distribuidor">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="63.0" layoutY="551.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Relatório de Vendas ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="328.0" layoutY="552.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registrar Compra">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="600.0" layoutY="552.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cliente">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="btEnterDistribuidor" layoutX="554.0" layoutY="83.0" mnemonicParsing="false" onAction="#btEnterDistribuidorAction" prefHeight="125.0" prefWidth="151.0" style="-fx-background-color: linear-gradient(to bottom, #0099cc 0%, #0066cc 100%); -fx-background-radius: 50;">
+         <graphic>
+            <ImageView fitHeight="148.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../packageIcons/2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btEnterVendedor" layoutX="317.0" layoutY="83.0" mnemonicParsing="false" onAction="#btEnterVendedorAction" prefHeight="152.0" prefWidth="160.0" style="-fx-background-color: linear-gradient(to bottom, #0099cc 0%, #0066cc 100%); -fx-background-radius: 50;">
+         <graphic>
+            <ImageView fitHeight="135.0" fitWidth="177.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/Vendedor.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btEnterCliente" layoutX="544.0" layoutY="372.0" mnemonicParsing="false" onAction="#btEnterClienteAction" prefHeight="152.0" prefWidth="160.0" style="-fx-background-color: linear-gradient(to bottom, #0099cc 0%, #0066cc 100%); -fx-background-radius: 50;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../packageIcons/4.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btEnterProduto" layoutX="58.0" layoutY="83.0" mnemonicParsing="false" onAction="#btEnterProdutoAction" prefHeight="152.0" prefWidth="166.0" style="-fx-background-color: linear-gradient(to bottom, #0099cc 0%, #0066cc 100%); -fx-background-radius: 50;">
+         <graphic>
+            <ImageView fitHeight="129.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/Icproduto.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btEnterRegistComp" layoutX="314.0" layoutY="379.0" mnemonicParsing="false" onAction="#btEnterRegistCompAction" prefHeight="152.0" prefWidth="166.0" style="-fx-background-color: linear-gradient(to bottom, #0099cc 0%, #0066cc 100%); -fx-background-radius: 50;">
+         <graphic>
+            <ImageView fitHeight="123.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../packageIcons/6713723.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btEnterRelatorio" layoutX="54.0" layoutY="372.0" mnemonicParsing="false" onAction="#btEnterRelatorioAction" prefHeight="158.0" prefWidth="174.0" style="-fx-background-color: linear-gradient(to bottom, #0099cc 0%, #0066cc 100%); -fx-background-radius: 50;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../packageIcons/3.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+   </children>
+</AnchorPane>

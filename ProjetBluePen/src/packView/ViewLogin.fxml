@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="611.0" prefWidth="769.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="packController.controllerLogin">
+   <children>
+      <Button fx:id="btEntrar" layoutX="508.0" layoutY="421.0" mnemonicParsing="false" onAction="#btVoltarTeste" prefHeight="26.0" prefWidth="134.0" style="-fx-background-color: linear-gradient(to bottom, #0099cc 0%, #0066cc 100%); -fx-background-radius: 50;" text="Entrar" />
+      <Text fill="#0f529e" layoutX="433.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faça seu login !!!" wrappingWidth="284.51959228515625">
+         <font>
+            <Font name="Arial" size="36.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="682.0" fitWidth="482.0" layoutY="-38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/bf25bd90572edeeb86d89ea6593ac35e%20(1).jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#3405dc" layoutX="113.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BLUE PEN" wrappingWidth="230.91949462890625">
+         <font>
+            <Font name="Arial" size="64.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtUser" layoutX="459.0" layoutY="249.0" prefHeight="26.0" prefWidth="231.0" promptText="CPF" style="-fx-background-radius: 50;" />
+      <TextField fx:id="txtSenha" layoutX="460.0" layoutY="333.0" prefHeight="26.0" prefWidth="186.0" style="-fx-background-radius: 50;" />
+      <Text layoutX="460.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuário">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="460.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="txtPassword" layoutX="459.0" layoutY="332.0" prefHeight="26.0" prefWidth="186.0" style="-fx-background-radius: 50;" />
+      <Label layoutX="433.0" layoutY="383.0" prefHeight="18.0" prefWidth="285.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ToggleButton fx:id="VerSenha" layoutX="651.0" layoutY="332.0" mnemonicParsing="false" onAction="#visualizarSenha" prefHeight="26.0" prefWidth="38.0" style="-fx-background-radius: 100; -fx-background-color: linear-gradient(to bottom, #0099cc 0%, #0066cc 100%);" textFill="#141718">
+         <graphic>
+            <ImageView fitHeight="18.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../packageIcons/olho%20(2).png" />
+               </image>
+            </ImageView>
+         </graphic></ToggleButton>
+   </children>
+</AnchorPane>

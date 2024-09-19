@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="611.0" prefWidth="782.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="packController.controllerClientes">
+   <children>
+      <TextField fx:id="TextFieldPesquisarC" layoutX="241.0" layoutY="109.0" prefHeight="26.0" prefWidth="426.0" style="-fx-background-radius: 50;" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="630.0" layoutY="-3.0" strokeType="INSIDE" width="213.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.09090908549048685">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.00249512679874897" green="0.3492761552333832" blue="0.6736842393875122" opacity="0.8299999833106995" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.09090908549048685">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.00249512679874897" green="0.3492761552333832" blue="0.6736842393875122" opacity="0.8299999833106995" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Rectangle>
+      <Button fx:id="btPesquisar" layoutX="646.0" layoutY="107.0" mnemonicParsing="false" onAction="#btPesquisarAction" prefHeight="26.0" prefWidth="78.0" style="-fx-background-radius: 50; -fx-background-color: linear-gradient(to bottom, #0099cc 0%, #0066cc 100%);" text="Pesquisar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Text fill="#0a4d73" layoutX="241.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clientes">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Line endX="30.79998779296875" layoutX="342.0" layoutY="87.0" startX="-100.0" stroke="#0a4d73" />
+      <ImageView fitHeight="32.0" fitWidth="66.0" layoutX="322.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../packageIcons/Canetaim.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="TableViewClientes" layoutX="223.0" layoutY="178.0" prefHeight="340.0" prefWidth="548.0">
+        <columns>
+          <TableColumn fx:id="columId" prefWidth="33.5999755859375" text="Id" />
+          <TableColumn fx:id="columNome" prefWidth="56.80000305175781" text="Nome" />
+            <TableColumn fx:id="columCPF" prefWidth="42.39996337890625" text="CPF" />
+            <TableColumn fx:id="columEmail" prefWidth="55.20001220703125" text="Email" />
+            <TableColumn fx:id="columTelefone" prefWidth="59.20001220703125" text="Telefone" />
+            <TableColumn fx:id="columDataNasc" prefWidth="70.39996337890625" text="Data Nasc" />
+            <TableColumn fx:id="columDataPrim" prefWidth="70.39996337890625" text="DataPrim" />
+            <TableColumn fx:id="columEnder" prefWidth="99.2000732421875" text="Endereço" />
+            <TableColumn fx:id="columTipo" prefWidth="57.5999755859375" text="Tipo Jur" />
+        </columns>
+      </TableView>
+      <Button fx:id="btCadrastrar" layoutX="241.0" layoutY="141.0" mnemonicParsing="false" onAction="#btCadrastrarAction" prefHeight="26.0" prefWidth="104.0" style="-fx-background-radius: 50; -fx-background-color: linear-gradient(to bottom, #0099cc 0%, #0066cc 100%);" text="Cadrastrar">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btExcluir" layoutX="497.0" layoutY="141.0" mnemonicParsing="false" onAction="#btExcluirAction" prefHeight="26.0" prefWidth="104.0" style="-fx-background-radius: 50; -fx-background-color: linear-gradient(to bottom, #0099cc 0%, #0066cc 100%);" text="Excluir">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btEditar" layoutX="373.0" layoutY="141.0" mnemonicParsing="false" onAction="#btEditarAction" prefHeight="26.0" prefWidth="104.0" style="-fx-background-radius: 50; -fx-background-color: linear-gradient(to bottom, #0099cc 0%, #0066cc 100%);" text="Editar">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btVoltar" layoutX="685.0" layoutY="565.0" mnemonicParsing="false" onAction="#btVoltarAction" prefHeight="32.0" prefWidth="78.0" style="-fx-background-radius: 50; -fx-background-color: linear-gradient(to bottom, #0099cc 0%, #0066cc 100%);">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../packageIcons/seta.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="38.0" layoutX="12.0" layoutY="200.0" stroke="WHITE" strokeType="INSIDE" width="189.0" />
+      <Text layoutX="21.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MENU PRICIPAL">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Line endX="216.20001220703125" layoutX="-46.0" layoutY="359.0" rotate="90.0" startX="-100.0" stroke="WHITE" />
+      <Button fx:id="btEnterProduto" layoutX="12.0" layoutY="245.0" mnemonicParsing="false" onAction="#btEnterProdutoAction" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: white;" text="Produtos">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btEnterVendedor" layoutX="12.0" layoutY="413.0" mnemonicParsing="false" onAction="#btEnterVendedorAction" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: white;" text="Vendedor">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="12.0" layoutY="370.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: linear-gradient(to bottom, #0099cc 0%, #0066cc 100%);" text="Clientes">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btEnterRegistComp" layoutX="12.0" layoutY="328.0" mnemonicParsing="false" onAction="#btEnterRegistCompAction" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: white;" text="Registrar Compra">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btEnterDistribuidor" layoutX="12.0" layoutY="285.0" mnemonicParsing="false" onAction="#btEnterDistribuidorAction" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: white;" text="Distribuidor">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
