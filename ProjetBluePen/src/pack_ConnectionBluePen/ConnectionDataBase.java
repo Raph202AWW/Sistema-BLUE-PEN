@@ -10,7 +10,7 @@ public class ConnectionDataBase {
 // final para a variavel não mudar
 	private final static String Driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
 	private final static String URL = "jdbc:sqlserver://localhost:56594;encrypt=false;databaseName=BluePen";
-	private final static String User = "sa";
+	private final static String Usuario = "sa";
 	private final static String password = "12345678";
 	
 	public static Connection getConnection()
@@ -18,7 +18,7 @@ public class ConnectionDataBase {
 		try {
 			Class.forName(Driver);
 			System.out.println("Conexão Estabelecida!!!");
-			return DriverManager.getConnection(URL, User, password);
+			return DriverManager.getConnection(URL, Usuario, password);
 		} catch (ClassNotFoundException|SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
